@@ -1,0 +1,269 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.custom-navbar {
+    background: linear-gradient(135deg, #7e7676, #5e5a5a); 
+    background-size: 200% 200%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: animateBackground 3s ease infinite;
+}
+
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes titilar {
+    0%, 100% {
+        color: #FFD700; /* Dorado */
+    }
+    50% {
+        color: #fd4242; /* Blanco */
+    }
+}
+/* .logo{
+    width: 4%;
+    border-radius: 10px;
+} */
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #c0b5b5; /* Color de texto personalizado */
+    animation: titilar 3s infinite; /* Animación para el efecto titilar */
+}
+.custom-navbar .nav-link:hover {
+    color: #474640; /* Color de texto al pasar el ratón */
+}
+.navbar-toggler {
+    background-color: #a09998; /* Color de fondo del botón */
+}
+/* Estilo personalizado para el carrusel */
+.carousel-item img {
+    width: 100%;
+    height: 400px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo para la sección de ofertas */
+.servicios-section {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margin */
+}
+/* Estilo para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    animation: titilar 2s infinite;
+}
+@keyframes titilar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.nosotros {
+    background: #f8f9fa; /* Fondo claro para la sección */
+    padding: 40px 20px; /* Padding para espaciar la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    margin-top: 60px; /* Margen superior para separar del navbar */
+}
+
+.nosotros h2 {
+    font-size: 2rem; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 20px; /* Espacio inferior para el título */
+}
+
+.nosotros p {
+    font-size: 1rem; /* Tamaño de fuente para el párrafo */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+/* Estilos personalizados para el modal */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 10px 20px;
+}
+
+.modal-footer .btn {
+    border-radius: 20px;
+}
+
+#habitacionModalImg {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.servicios-section {
+    background: #f8f9fa; /* Fondo claro para la sección */
+    padding: 40px 20px; /* Padding para espaciar la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    text-align: center; /* Centrar el texto */
+}
+
+.servicios-section h2 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 20px; /* Espacio inferior para el título */
+    color: #333; /* Color del texto */
+}
+
+.service-icon {
+    color: #474640; /* Color de los íconos */
+}
+
+.service-icon i {
+    transition: transform 0.3s; /* Transición para el efecto hover */
+}
+
+.service-icon i:hover {
+    transform: scale(1.2); /* Efecto hover para agrandar los íconos */
+}
+
+
+.carousel-inner img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes del carrusel */
+}
+
+.opiniones-section {
+    background: #f8f9fa; /* Fondo claro para la sección */
+    padding: 40px 20px; /* Padding para espaciar la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    margin-top: 60px; /* Margen superior para separar del navbar */
+}
+
+.opiniones-section h2 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 20px; /* Espacio inferior para el título */
+    color: #333; /* Color del texto */
+}
+
+.opiniones-section .card {
+    border: none; /* Sin borde para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
+    border-radius: 10px; /* Bordes redondeados para las tarjetas */
+}
+
+.opiniones-section .card-body {
+    padding: 20px; /* Padding para el cuerpo de las tarjetas */
+}
+
+.opiniones-section .card-title {
+    font-size: 1.5rem; /* Tamaño de fuente para el título de las tarjetas */
+    margin-bottom: 10px; /* Espacio inferior para el título de las tarjetas */
+}
+
+.opiniones-section .card-text {
+    font-size: 1rem; /* Tamaño de fuente para el texto de las tarjetas */
+    color: #555; /* Color del texto */
+}
+.contact-section {
+    background: linear-gradient(135deg, #7e7676, #5e5a5a); /* Fondo con gradiente */
+    color: #fff; /* Color del texto */
+    padding: 40px 20px; /* Padding para espaciar la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 20px; /* Espacio inferior para el título */
+    color: #fff; /* Color del texto */
+}
+
+.contact-section .form-control {
+    border-radius: 5px; /* Bordes redondeados para los campos del formulario */
+    border: 1px solid #ccc; /* Borde de los campos del formulario */
+}
+
+.contact-section .btn-primary {
+    background-color: #8d95a3; /* Color del botón */
+    border-color: #797e88; /* Color del borde del botón */
+    padding: 10px 20px; /* Padding del botón */
+    font-size: 1.2rem; /* Tamaño de fuente del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #163a5f; /* Color del botón al pasar el ratón */
+    border-color: #163a5f; /* Color del borde del botón al pasar el ratón */
+}
+.whatsapp-button img {
+    width: 70px;
+    height: 70px;
+}
+.footer {
+    position: relative;
+    background: linear-gradient(135deg, #7e7676, #5e5a5a); /* Fondo con gradiente */
+    color: #fff; /* Color del texto */
+    padding: 40px 0; /* Más padding para un diseño más espacioso */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer p, .footer a {
+    margin: 0;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.footer a i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.map-container {
+    height: 200px; /* Ajusta la altura del mapa según sea necesario */
+    margin-top: 20px; /* Más margen superior */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.map-container iframe {
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%;
+    height: 100%;
+    border: none; /* Elimina el borde del iframe */
+}
